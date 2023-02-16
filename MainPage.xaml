@@ -3,10 +3,59 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Calculator.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout>
+    <ScrollView HorizontalOptions="StartAndExpand">
+        <VerticalStackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
+            <HorizontalStackLayout VerticalOptions="Start" HorizontalOptions="Center">
+                <Label Margin="5" VerticalOptions="Center" HorizontalOptions="Start" Text="Выражение"/>
+                <Entry HorizontalOptions="StartAndExpand" x:Name="InputEntry"/>
+            </HorizontalStackLayout>
 
 
+            <HorizontalStackLayout VerticalOptions="Start" HorizontalOptions="Center">
+                <Label Margin="5" VerticalOptions="Center" HorizontalOptions="Start" Text="Результат"/>
+                <Entry HorizontalOptions="StartAndExpand" x:Name="ResultEntry"/>
+            </HorizontalStackLayout>
+
+            <Label Text="Редактирование"/>
+
+            <HorizontalStackLayout Margin="2" HorizontalOptions="FillAndExpand">
+                <Button Margin="3" HorizontalOptions="Start" Text="("/>
+                <Button Margin="3" HorizontalOptions="Start" Text=")"/>
+                <Button Margin="3" HorizontalOptions="End" Text="Стереть"/>
+                <Button Margin="3" HorizontalOptions="End" Text="Сброс"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Margin="2">
+                <Button Margin="3" Text="1"/>
+                <Button Margin="3" Text="2"/>
+                <Button Margin="3" Text="3"/>
+                <Button Margin="3" Text="/"/>
+                <Button Margin="3" Text="MR"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Margin="2">
+                <Button Margin="3" Text="4"/>
+                <Button Margin="3" Text="5"/>
+                <Button Margin="3" Text="6"/>
+                <Button Margin="3" Text="*"/>
+                <Button Margin="3" Text="M+"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Margin="2">
+                <Button Margin="3" Text="7"/>
+                <Button Margin="3" Text="8"/>
+                <Button Margin="3" Text="9"/>
+                <Button Margin="3" Text="-"/>
+                <Button Margin="3" Text="MC"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Margin="2">
+                <Button Margin="3" Text="+/-"/>
+                <Button Margin="3" Text="0"/>
+                <Button Margin="3" Text="mod"/>
+                <Button Margin="3" Text="+"/>
+                <Button Margin="3" Text="="/>
+            </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 

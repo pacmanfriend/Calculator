@@ -7,13 +7,13 @@
         <VerticalStackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
             <HorizontalStackLayout VerticalOptions="Start" HorizontalOptions="Center">
                 <Label Margin="5" VerticalOptions="Center" HorizontalOptions="Start" Text="Выражение"/>
-                <Entry HorizontalOptions="StartAndExpand" x:Name="InputEntry"/>
+                <Entry WidthRequest="300"  HorizontalOptions="StartAndExpand" x:Name="InputEntry"/>
             </HorizontalStackLayout>
 
 
             <HorizontalStackLayout VerticalOptions="Start" HorizontalOptions="Center">
                 <Label Margin="5" VerticalOptions="Center" HorizontalOptions="Start" Text="Результат"/>
-                <Entry HorizontalOptions="StartAndExpand" x:Name="ResultEntry"/>
+                <Entry WidthRequest="300" HorizontalOptions="StartAndExpand" x:Name="ResultEntry"/>
             </HorizontalStackLayout>
 
             <Label Text="Редактирование"/>

@@ -9,7 +9,7 @@ public partial class MainPage : ContentPage
         InitializeComponent();
 
         this.WidthRequest = 400;
-        this.HeightRequest = 600;
+        this.HeightRequest = 400;
     }
 }
 
